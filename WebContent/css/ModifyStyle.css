@@ -1,0 +1,15 @@
+@charset "utf-8";
+/* CSS Document */
+	
+
+	input#refresh{
+		background-color:#ffb347;
+	}
+	
+	input#modify{
+		background-color:#8B4513;
+	}
+	
+	input#return{
+		background-color:#ffb347;
+	}

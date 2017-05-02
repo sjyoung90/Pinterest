@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>파일 업로드</title>
+<script>
+
+	var req = null;
+
+	function ajaxFunction() {
+		var url = "FileServlet";
+
+		if (window.XMLHttpRequest) {
+			req = new XMLHttpRequest();
+
+			try {
+				req.open("POST", url, true);
+			} catch (e) {
+				alert(e);
+			}
+			req.setRequestHeader("Content-type", "multipart/form-data");
+			req.send(document.getElementById('txtFile').files[0]); // 파일 포인터 넘겨줌
+		} else if (window.ActiveXObject) {
+			req = new ActiveXObject("Microsoft.XMLHTTP");
+
+		}
+	}
+</script>
+</head>
+<body>
+
+  <form id="myForm" enctype="multipart/form-data" method="post"
+  		action="FileServlet" onsubmit="ajaxFunction()">
+	  <input type="file" name="txtFile" id="txtFile" /><br />
+	  <input type="submit" id="submitID" name="submit" value="Upload" />
+  </form>
+</body>
+</html>
+
+
+

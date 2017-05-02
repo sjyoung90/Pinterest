@@ -1,0 +1,40 @@
+@charset "utf-8";
+/* CSS Document */
+	
+	body{
+		margin:0 auto;
+		height:144px;
+		width:761px;
+		text-align:center;
+		font-family:ng;
+		padding-left:20px;
+		padding-top:100px;
+		padding-bottom:20px;
+	}
+	
+	header {
+		font-size:30px;
+		display:block;
+		text-align:center;
+		font-family:ngb;
+	}
+	
+	div.button{
+		margin:0 auto;
+		height:38px;
+		width:400px;
+	}
+	
+	input#myinfo{
+		background-color:#8B4513;
+	}
+	
+	input#logout{
+		background-color:#149494;
+	}
+	
+	input#delete{
+		background-color:#646464;
+	}
+	
+	

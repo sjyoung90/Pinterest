@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Insert title here</title>
+<link rel="stylesheet" type="text/css" href="css/CommonStyle.css" />
+<link rel="stylesheet" type="text/css" href="css/LoginStyle.css" />
+<script type="text/javascript" src="./js/login.js"></script>
+</head>
+
+<body>
+	<header>
+		<span class="log-in">Log in</span> or <span class="sign-up">sign up</span>
+	</header>
+	<br>
+	<article>
+		<form action="login" method="post">
+			아이디 : <input type="text" name="userID" maxlength="25"
+				value="<%=idCookie%>" placeholder="아이디" required />
+				<input type="checkbox" name="cookie"/>
+				<label for="keep_uid1">아이디 저장</label>
+				<br>
+				비밀번호 : <input type="password" name="userPW" maxlength="16" placeholder="비밀번호" required />
+				<input type="submit" value="로그인" /><br>
+				<br>
+				<a href="join">회원가입</a> &nbsp; &nbsp; &nbsp;
+				<a href="findID">아이디</a>/<a href="findPW">비밀번호 찾기</a>
+		</form>
+	</article>
+</body>
+</html>

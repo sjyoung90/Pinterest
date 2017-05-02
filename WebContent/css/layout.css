@@ -1,0 +1,241 @@
+@CHARSET "utf-8";
+
+@font-face{
+	font-family:ngB;
+	src:url("../font/NanumGothicBold.eot");
+src:local(※), url("../font/NanumGothicBold.woff") format("woff");
+	}
+	
+@font-face{
+	font-family:ng;
+	src:url("../font/NanumGothic.eot");
+src:local(※), url("../font/NanumGothic.woff") format("woff");
+	}
+
+body {
+	background: url(http://subtlepatterns.com/patterns/scribble_light.png) ;
+}
+
+div {
+	display: block;
+}
+
+header {
+		height:50px;
+		width:100%;
+		top:0px;
+		position:fixed; /* 상단 div고정 */
+		display:block;
+	}
+
+header .headerBackground {
+	box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.1),0 1px 0 0 rgba(0, 0, 0, 0.1);
+	-webkit-transform: translateZ(0);
+	background:#ffffff;
+	height: 44px;
+	width:100%;
+	z-index: 10;
+}
+
+header .headerContainer {
+	-webkit-transform: translateZ(0);
+	display: block; /**/
+	height: 29px;
+	overflow: hidden;
+	padding: 7px 0 0;
+	z-index: 11;
+}
+
+header .title {
+	width: 104px;
+	height: 26px;
+	float:left;
+	margin-left: 10px;
+	font-size:25px;
+	font-family:ngb;
+}
+
+form .login {
+	float: right;
+	margin-right: 5px;
+	width: 550px;
+	font-family:ng;
+}
+
+input[type=text], input[type=password] {
+		font-family:ng;
+	    font-size: 13px;
+	    font-weight: 400;
+	    border: 3px solid #ebe6e2;
+	    border-radius: 5px;
+	    transition: all 0.3s ease-out;
+	}
+	
+input[type|="button"], input[type|="reset"]{
+	font-size:14px;
+	font-family:ng;
+	width:70px; height:25px;
+	background-color:#228Cff;
+	border:none;
+	border-radius: 10px;
+	color:#fff;
+	cursor:pointer;
+	margin:0 10px 0 0px;
+}
+	
+input[type|="submit"]{
+		font-size:14px;
+		font-family:ng;
+		width:70px; height:25px;
+		background-color:#FF8C0A;
+		border:none;
+		border-radius: 10px;
+		color:#fff;
+		cursor:pointer;
+		margin:0 10px 0 0px;
+}
+
+#wrapper {
+	width: 90%;
+	max-width: 1100px;
+	min-width: 800px;
+	margin: 60px auto;
+}
+
+#columns {
+	-webkit-column-count: 3;
+	-webkit-column-gap: 10px;
+	-webkit-column-fill: auto;
+	-moz-column-count: 3;
+	-moz-column-gap: 10px;
+	-moz-column-fill: auto;
+	column-count: 3;
+	column-gap: 15px;
+	column-fill: auto;
+}
+
+.pin {
+	display: inline-block;
+	background: #FEFEFE;
+	border: 2px solid #FAFAFA;
+	box-shadow: 0 1px 2px rgba(34, 25, 25, 0.4);
+	margin: 0 2px 15px;
+	-webkit-column-break-inside: avoid;
+	-moz-column-break-inside: avoid;
+	column-break-inside: avoid;
+	padding: 15px;
+	padding-bottom: 5px;
+	background: -webkit-linear-gradient(45deg, #FFF, #F9F9F9);
+	opacity: 1.0;
+	
+	-webkit-transition: all .2s ease;
+	-moz-transition: all .2s ease;
+	-o-transition: all .2s ease;
+	transition: all .2s ease;
+}
+
+.pin img {
+	width: 100%;
+	border-bottom: 1px solid #ccc;
+	padding-bottom: 15px;
+	margin-bottom: 5px;
+}
+
+.pin p {
+	font: 12px/18px Arial, sans-serif;
+	color: #333;
+	margin: 0;
+}
+
+.outer {
+	background-color: #000;
+	opacity: .7;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 1; /* 이미지 겹치기 순서 */
+}
+
+.overlay {
+	background-color: #fff;
+	width: 600px;
+	height: 800px;
+	margin: 0 auto;
+	position: absolute;
+	left: 25%;
+	top: 10%;
+	overflow: scroll;
+	z-index: 2; /* 이미지 겹치기 순서. outer보다 앞에 위치 */
+}
+
+.overlayHeader {
+	height:20px;
+	width:600px;
+	top:0px;
+	position:absolute; /* 상단 div고정 */
+	display:block;
+}
+
+.overlayHeader .headerBackground{
+	box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.1),0 1px 0 0 rgba(0, 0, 0, 0.1);
+	-webkit-transform: translateZ(0);
+	background:#ffffff;
+	height: 35px;
+	width:100%;
+}
+
+.headerContainer{
+	-webkit-transform: translateZ(0);
+	display: block; /**/
+	height: 35px;
+	padding: 7px 0 0;
+}
+
+.buttonDiv{
+	width:180px;
+	height:30px;
+	margin:0 auto;
+}
+
+.overlayImg {
+	height: 640px;
+	width: 427px;
+	display: block;
+	margin: 0 auto;
+	position: relative;
+	padding: 50px 0px;
+}
+
+.overlayExplain {
+	height: 300px;
+	width: 300px;
+	margin: 0 auto;
+	position: relative;
+	font-family: ng;
+	color: #333;
+}
+
+
+@media (min-width: 960px) {
+	#columns {
+		-webkit-column-count: 4;
+		-moz-column-count: 4;
+		column-count: 4;
+	}
+}
+
+@media (min-width: 1100px) {
+	#columns {
+		-webkit-column-count: 5;
+		-moz-column-count: 5;
+		column-count: 5;
+	}
+}
+
+/*
+#columns:hover .pin:not(:hover) {
+	opacity: 0.4;
+}
+*/

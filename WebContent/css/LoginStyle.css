@@ -1,0 +1,45 @@
+@charset "utf-8";
+/* CSS Document */
+
+	header {
+		font-size:30px;
+		display:block;
+		text-align:center;
+		font-family:ngb;
+	}
+	
+	span.log-in, span.sign-up {
+	    display: inline-block;
+	    text-transform: uppercase;
+	}
+ 
+	span.log-in {
+	    color: #FF8C0A;
+	    padding-right: 2px;
+	}
+ 
+	span.sign-up {
+	    color: #6c6763;
+	    padding-left: 2px;
+	}
+	
+	input[type=text], input[type=password] {
+		font-family: 'Lato', Calibri, Arial, sans-serif;
+	    font-size: 13px;
+	    font-weight: 400;
+	    border: 3px solid #ebe6e2;
+	    border-radius: 5px;
+	    transition: all 0.3s ease-out;
+	}
+	
+	form input[type|="submit"]{
+		font-size:14px;
+		font-family:ng;
+		width:90px; height:30px;
+		background-color:#FF8C0A;
+		border:none;
+		color:#fff;
+		cursor:pointer;
+		margin:0 10px 0 10px;
+}
+

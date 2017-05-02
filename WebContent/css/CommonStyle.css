@@ -1,0 +1,65 @@
+@charset "utf-8";
+/* CSS Document */
+
+@font-face{
+	font-family:ngB;
+	src:url("../font/NanumGothicBold.eot");
+src:local(※), url("../font/NanumGothicBold.woff") format("woff");
+	}
+	
+@font-face{
+	font-family:ng;
+	src:url("../font/NanumGothic.eot");
+src:local(※), url("../font/NanumGothic.woff") format("woff");
+	}
+	
+	body{
+		margin:0 auto;
+		height:500px;
+		width:761px;
+		text-align:center;
+		font-family:ng;
+		padding-left:20px;
+		padding-top:50px;
+		padding-bottom:20px;
+	}
+	
+	header {
+		font-size:30px;
+		display:block;
+		text-align:center;
+		font-family:ngb;
+	}
+	
+	
+	input {
+			font-family: 'Lato', Calibri, Arial, sans-serif;
+		    font-size: 13px;
+		    font-weight: 400;
+		    border: 3px solid #ebe6e2;
+		    border-radius: 5px;
+		    transition: all 0.3s ease-out;
+		}
+		
+		
+	form input[type|="submit"]{
+		font-size:14px;
+		font-family:ng;
+		width:100px; height:38px;
+		background-color:#ffb347;
+		border:none;
+		color:#fff;
+		cursor:pointer;
+		margin:0 10px 0 10px;
+	}
+	
+	input[type|="button"], input[type|="reset"]{
+		font-size:14px;
+		font-family:ng;
+		width:100px; height:38px;
+		background-color:#999;
+		border:none;
+		color:#fff;
+		cursor:pointer;
+		margin:0 10px 0 10px;
+	}
